@@ -17,10 +17,10 @@
                         Title = c.String(maxLength: 255),
                         Ingest = c.DateTime(nullable: false),
                         TranscodeAttempt = c.Byte(),
-                        TranscodeFilename = c.String(maxLength: 255),
+                        TranscodeFilename = c.String(maxLength: 511),
                         TranscodeSuccess = c.DateTime(),
                         PublishAttempt = c.Byte(),
-                        PublishLocation = c.String(maxLength: 255),
+                        PublishLocation = c.String(maxLength: 511),
                         PublishSuccess = c.DateTime(),
                         Cleanup = c.DateTime(),
                     })

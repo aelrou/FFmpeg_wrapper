@@ -44,7 +44,7 @@ namespace FFmpeg_wrapper
             string ingestFilename = groups[1].Value;
             string ingestExtention = groups[2].Value;
 
-            string workDir = "C:\\Users\\[username]\\Downloads";
+            string workDir = "C:\\Users\\Public\\Downloads";
             if (Directory.Exists(workDir) == false)
             {
                 Console.WriteLine("Error. Ingest directory cannot be found.");
@@ -79,7 +79,7 @@ namespace FFmpeg_wrapper
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = ffmpegexe,
-                    Arguments = "-i \"" + workDir + "\\" + ingestFilename + "." + ingestExtention + "\" -c:v libx264 -pix_fmt yuv420p -b:v " + videoBitrate + " -maxrate " + videoMaxrate + " -bufsize " + videoBufsize + " -c:a aac -b:a " + audioBitrate + " -y \"" + workDir + transcodeFile + "\"",
+                    Arguments = "-i \"" + workDir + "\\" + ingestFilename + "." + ingestExtention + "\" -c:v libx264 -pix_fmt yuv420p -b:v " + videoBitrate + " -maxrate " + videoMaxrate + " -bufsize " + videoBufsize + " -c:a aac -b:a " + audioBitrate + " -y \"" + workDir + "\\" + transcodeFile + "\"",
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
                     CreateNoWindow = true

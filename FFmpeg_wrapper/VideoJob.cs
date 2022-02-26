@@ -24,13 +24,13 @@ namespace FFmpeg_wrapper
 
         public byte? TranscodeAttempt { get; set; }
 
-        [StringLength(255)]
+        [StringLength(511)]
         public string TranscodeFilename { get; set; }
         public DateTime? TranscodeSuccess { get; set; }
 
         public byte? PublishAttempt { get; set; }
 
-        [StringLength(255)]
+        [StringLength(511)]
         public string PublishLocation { get; set; }
         public DateTime? PublishSuccess { get; set; }
         public DateTime? Cleanup { get; set; }

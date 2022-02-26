@@ -69,9 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LZVideoContext.cs" />
-    <Compile Include="Migrations\202202260658029_CreateVideoJobTable.cs" />
-    <Compile Include="Migrations\202202260658029_CreateVideoJobTable.designer.cs">
-      <DependentUpon>202202260658029_CreateVideoJobTable.cs</DependentUpon>
+    <Compile Include="Migrations\202202260712414_CreateVideoJobTable.cs" />
+    <Compile Include="Migrations\202202260712414_CreateVideoJobTable.designer.cs">
+      <DependentUpon>202202260712414_CreateVideoJobTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="VideoJob.cs" />
@@ -95,8 +95,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202202260658029_CreateVideoJobTable.resx">
-      <DependentUpon>202202260658029_CreateVideoJobTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202260712414_CreateVideoJobTable.resx">
+      <DependentUpon>202202260712414_CreateVideoJobTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

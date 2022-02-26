@@ -13,7 +13,7 @@ namespace FFmpeg_wrapper.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202202260658029_CreateVideoJobTable"; }
+            get { return "202202260712414_CreateVideoJobTable"; }
         }
         
         string IMigrationMetadata.Source
